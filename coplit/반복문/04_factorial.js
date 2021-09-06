@@ -19,4 +19,3 @@ function factorial(num) {
    }
      return result;
    }
-                                                                     
