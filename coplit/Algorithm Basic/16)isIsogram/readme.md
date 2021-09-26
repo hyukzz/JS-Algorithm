@@ -30,6 +30,7 @@ console.log(output); // false
 ## 소스코드
 
 ```
+// 1번 풀이
 function isIsogram(str) {
   let lowerStr = str.toLowerCase();
     for(let i = 0; i < lowerStr.length; i++) {
@@ -38,6 +39,11 @@ function isIsogram(str) {
       }
     }
     return true;
+}
+
+// 2번 풀이
+function isIsogram(str) {
+   return !str.match(/([a-z]).*\1/i);
 }
 ```
 
