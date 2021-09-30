@@ -19,3 +19,22 @@ function multy(num) {
     
     return Number(arr)
   }
+
+  function test3(num) {
+    /*
+    1. 변수에 인자 값을 문자열로 나눈 값을 할당
+    2. 변수의 길이가 1일 경우 숫자가 하나이기 때문에 그 값을 정수의 값으로 리턴
+    3. reduce 메서드를 통해 result변수의 값끼리 곱한 것을 multiply변수에 할당
+    4. 함수문 test3의 multiply 값을 리턴
+    */
+    
+      let result = num.toString().split('');
+    
+      if(result.length === 1) {
+        return parseInt(result)
+      }
+    
+      let multiply = result.reduce((a, b) => parseInt(a) * parseInt(b))
+      return test3(multiply);
+    }
+    

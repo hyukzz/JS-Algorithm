@@ -22,3 +22,25 @@ function test1(str) {
     }
     return obj;
   }
+
+  function test1(str) {
+    /* 
+    1. 객체로 리턴해야 되기 때문에 변수에 객체를 할당
+    2. 소문자형태로 출력하고, 띄어쓰기를 통해 단어를 구분
+    3. 소문자와 띄어쓰기로 구분되게하는 변수를 만듬
+    4. 변수를 반복문을 통해 돌림
+    5. 반복문 내에서 단어의 개수의 값을 찾고 띄어쓰기가 없는 상태에서 객체 값을 추가
+    6. 변수의 인덱스 값이 별도의 문자열일 경우 1을 리턴
+    7. 변수의 인덱스 값이 별도의 문자열로 나올 경우 1씩 더함
+    8. 처음에 객체를 할당했던 변수를 리턴
+    */
+      let obj = {};
+      let word = str.toLowerCase().split(' ');
+    
+      for(let i = 0; i < word.length; i++) {
+        if(word[i] !== '') {
+          obj[word[i]] === undefined ? obj[word[i]] = 1 : obj[word[i]]++
+        }
+      }
+      return obj;
+    }

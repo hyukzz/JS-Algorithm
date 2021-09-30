@@ -38,3 +38,22 @@ function findIndex(arr) {
    
     return result;
   }
+
+  function test5(arr) {
+    // for of문을 통해 객체로 값을 저장
+    let arr1 = [];
+    for(el of arr){ 
+        obj = {};
+        for(let i = 0; i < el.length; i++){
+          obj[el[i][0]] = el[i][1]
+        }
+        arr1.push(obj)
+    }
+    //.map(raw => raw.reduce((obj, [k, v]) => Object.assign(obj, {[k]: v}) , {}))
+
+    // 객체를 오름차순으로 정렬
+    let arr2 = arr1.sort((a, b) => a.age - b.age);
+    // firstName, lastName을 filter(Boolean) 메서드로 필요없는 값을 걸러내고 join 메서드를 통해 띄어쓰기로 리턴
+    return arr2.map(({firstName, lastName}) => [firstName, lastName].filter(Boolean).join(' '))
+    }
+    
