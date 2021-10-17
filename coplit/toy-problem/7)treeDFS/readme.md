@@ -56,3 +56,8 @@ Node.prototype.addChild = function (child) {
   return child;
 };
 ```
+
+## 후기
+이번 주에 배웠던 것을 활용한 treeDFS문제였다.
+짧은 시간동안 다 풀 수는 없었지만 코드들을 공부해보며 생각해보았다.
+다음 주부터 되는 toy문제들을 풀 때는 좀 더 코드를 깔끔하게 짤 수 있도록 해야겠다.
