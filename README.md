@@ -1,3 +1,10 @@
-# JSP-Algorithm
+# JS-Algorithm
 
-## 현재 공부하고 있는 알고리즘 문제들을 정리하는 repository
+    알고리즘 문제를 푼 내용을 정리해서 기록합니다.
+
+## 알고리즘
+
+- [프로그래머스](./JS-Algorithm/codingtest/programmers)
+- [토이문제](./JS-Algorithm/coplit/toy-problem)
+
+<br>
