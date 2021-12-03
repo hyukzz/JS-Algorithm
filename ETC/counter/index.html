@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html>
-	<head></head>
+	<div id="root"></div>
 	<body>
 		<div id="root"></div>
 	</body>
 	<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
 	<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
-	<script>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/babel">
 		const root = document.getElementById('root')
-		const h3 = React.createElement(
-			'h3',
-			{
-				id: 'title',
-				onMouseEnter: () => console.log('mouse enter'),
-			},
-			'hello span'
+		const Title = () => (
+			<h3 id="title" onMouseEnter={() => console.log('mouse enter')}>
+				I'M a title
+			</h3>
 		)
-		const btn = React.createElement(
-			'button',
-			{
-				onClick: () => console.log('im clicked'),
-				style: { backgroundColor: 'tomato' },
-			},
-			'Click me'
+		// const h3 = React.createElement(
+		// 	'h3',
+		// 	{
+		//     id: "title",
+		// 		onMouseEnter: () => console.log('mouse enter'),
+		// 	},
+		// 	'I'M a title'
+		// )
+		const Button = () => (
+			<button
+				style={{ backgroundColor: 'tomato' }}
+				onClick={() => console.log('im clicked')}
+			>
+				Click me
+			</button>
 		)
-		const container = React.createElement('div', null, [h3, btn])
-		ReactDOM.render(container, root)
+		// const btn = React.createElement(
+		// 	'button',
+		// 	{
+		// 		onClick: () => console.log('im clicked'),
+		// 		style: { backgroundColor: 'tomato' },
+		// 	},
+		// 	'Click me'
+		// )
+		const Container = () => (
+			<div>
+				<Title />
+				<Button />
+			</div>
+		)
+		// const container = React.createElement('div', null, [Title, Button])
+		ReactDOM.render(<Container />, root)
 	</script>
 </html>
