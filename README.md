@@ -11,17 +11,13 @@
 
 ## TIL
 
-### 클라이언트
+- [클라이언트](./TIL/클라이언트/)
 
-- [서버 아키텍처](./TIL/클라이언트/서버아키텍처)
-- [서버 통신과 API](./TIL/클라이언트/서버통신과API)
+- [HTTP](./TIL/HTTP)
 
-### HTTP
+- [브라우저 작동 원리](./TIL/브라우저작동원리)
 
-- [HTTP Messages](./TIL/HTTP/HTTPMessages)
+## ETC
 
-### 브라우저 작동 원리
-
-- [AJAX](./TIL/브라우저작동원리/AJAX)
-
+-[counter](./ETC/counter)
 <br>
