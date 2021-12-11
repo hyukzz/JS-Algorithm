@@ -19,6 +19,6 @@
 
 ## ETC
 
-- [counter](./ETC/counter)
+- [converter](./ETC/converter)
 
   <br>
