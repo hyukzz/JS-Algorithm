@@ -8,16 +8,18 @@
 	<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
 	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script type="text/babel">
-		function Btn({ name, big }) {
+		function Btn({ name, changeValue }) {
+			console.log(name, 'was render')
 			return (
 				<button
+					onClick={changeValue}
 					style={{
 						backgroundColor: 'skyblue',
 						color: 'white',
 						padding: '10px 20px',
 						border: 0,
 						borderRadius: 30,
-						fontSize: big ? 30 : 15,
+						fontSize: 15,
 					}}
 				>
 					{name}
@@ -25,11 +27,17 @@
 			)
 		}
 
+		const MemorizedBtn = React.memo(Btn)
+
 		function App() {
+			const [value, setValue] = React.useState('Save Changes')
+			const changeValue = () => {
+				return setValue('Revert Changes')
+			}
 			return (
 				<div>
-					<Btn name="Save Changes" big={true} />
-					<Btn name="Confirm" big={false} />
+					<MemorizedBtn name={value} changeValue={changeValue} />
+					<MemorizedBtn name="Confirm" />
 				</div>
 			)
 		}
