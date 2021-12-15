@@ -4,8 +4,11 @@
 
 ## 알고리즘
 
-- [programmers](./programmers)
-- [coplit](./coplit)
+- [programmers](./알고리즘/programmers)
+
+- [coplit](./알고리즘/coplit)
+
+- [DP](./알고리즘/coplit/DP)
 
 <br>
 
@@ -17,8 +20,10 @@
 
 - [브라우저 작동 원리](./TIL/브라우저작동원리)
 
+<br>
+
 ## ETC
 
 - [converter](./ETC/converter)
 
-  <br>
+<br>
