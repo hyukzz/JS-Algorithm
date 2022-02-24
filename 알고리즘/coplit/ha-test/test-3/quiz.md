@@ -32,7 +32,7 @@ b = b + 1;
 }
 A. O(2n)
 B. O(nlogn)
-C. O(n)
+C. O(n) VVVV //정답 C
 D. O(n^2)
 
 13. HTTP 헤더와 그에 대한 설명이 틀린 것을 고르시오.
@@ -159,7 +159,7 @@ B.
 $ git merge --squash "feat/kimcoding"
 $ git commit
 
-C.
+C. V
 $ git merge --squash "feat/kimcoding" V
 $ git commit -m "merge"
 
@@ -179,4 +179,4 @@ C.
 협상 헤더에서는 원하는 콘텐츠에 대한 우선순위를 지정할 수 있습니다.
 
 D.
-Accept-Language: ko-KR,ko;q=0.9, en-US;q=0.8 일 경우, 영어를 1순위로 지원합니다.
+Accept-Language: ko-KR,ko;q=0.9, en-US;q=0.8 일 경우, 영어를 1순위로 지원합니다. VVV //정답 D
